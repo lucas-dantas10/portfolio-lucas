@@ -5,12 +5,19 @@
       <h6 class="section-title mb-6">Portfólio</h6>
       <!-- row -->
       <div class="row">
-        <div class="col-md-4" v-for="project in projects">
+        <div class="col-md-4" v-for="(project, index) in projects" :key="index">
           <a :href="project.href" class="portfolio-card">
             <img
-              :src=project.img
+              src=../../assets/imgs/project-one.png
               class="portfolio-card-img"
-              alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+              alt="Imagem de um projeto."
+              v-if="project.img === 'one'"
+            />
+            <img
+              src=../../assets/imgs/project-two.png
+              class="portfolio-card-img"
+              alt="Imagem de um projeto."
+              v-else
             />
             <span class="portfolio-card-overlay" target="_blank">
               <span class="portfolio-card-caption">
@@ -31,15 +38,22 @@ export default {
     return {
       projects: [
         {
-          img: "src/assets/imgs/project1.png",
+          img: "one",
           title: 'Front End',
-          subtitle: 'Categoria: VueJs, vue-router'
+          subtitle: 'Categoria: VueJs, vue-router',
+          href: '#'
         },
         {
-          img: "src/assets/imgs/project2.png",
+          img: "two",
           title: "Front End",
           subtitle: "Categoria: Html5, Css3, Javascript",
           href: "https://lucas-dantas10.github.io/hzc.github.io/"
+        },
+        {
+          img: "three",
+          title: "Full Stack",
+          subtitle: "Categoria: Laravel 5.8, VueJs, Vuex",
+          href: "#"
         }
       ]
     }

@@ -14,6 +14,12 @@
 </template>
 
 <style scoped>
+
+@media only screen and (max-width: 600px) {
+    #home {
+        margin: 0;
+    }
+}
 .header {
     margin: 4rem 8rem;
     height: 50vh;

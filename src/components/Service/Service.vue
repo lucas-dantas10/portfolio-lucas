@@ -44,7 +44,7 @@ export default {
         {
           icon: "engineering",
           title: "Habilidades BackEnd",
-          subtitle: "PHP, Laravel, MySql, SqlServer, Apache2, Linux",
+          subtitle: "PHP, Laravel, MySql, SqlServer, Apache2, Linux, Docker, Python",
         },
         {
           icon: "work_history",
@@ -58,6 +58,12 @@ export default {
 </script>
 
 <style scoped>
+
+@media only screen and (max-width: 600px) {
+  #service {
+    margin-top: 11rem;
+  }
+}
 
 #service {
   margin-bottom: 7rem;

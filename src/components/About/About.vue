@@ -1,7 +1,7 @@
 <template>
     <section class="section pt-0" id="about">
         <div class="container text-center">            
-            <div class="about d-flex align-items-center">
+            <div class="about d-flex align-items-center" id="about-me">
                 <div class="about-img-holder">
                     <img src="../../assets/imgs/lucas.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
@@ -21,7 +21,14 @@
 
 </template>
 
-<style>
+<style scoped>
+
+@media only screen and (max-width: 600px) {
+    #about-me {
+        flex-direction: column;
+        margin-top:10rem;
+    }
+}
 .section {
     height: 50vh;
 }

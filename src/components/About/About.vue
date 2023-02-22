@@ -21,7 +21,7 @@
 
 </template>
 
-<style scoped>
+<style>
 
 @media only screen and (max-width: 600px) {
     #about-me {

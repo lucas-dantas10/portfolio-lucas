@@ -14,6 +14,10 @@
           <a class="nav-link" href="#portfolio">Portfólio</a>
         </li>
 
+        <li class="nav-item d-none">
+          <a class="nav-link" href="#contact">Contato</a>
+        </li>
+
         <input class="checkbox" type="checkbox" @click="open()" id="checkbox-menu" />
 
         <label for="checkbox-menu">

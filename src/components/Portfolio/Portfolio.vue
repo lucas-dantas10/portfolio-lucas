@@ -2,7 +2,7 @@
   <section class="section" id="portfolio">
     <div class="container text-center">
       <p class="section-subtitle">O que eu fiz ?</p>
-      <h6 class="section-title mb-6">Portfólio</h6>
+      <h6 class="section-title mb-5">Portfólio</h6>
       <!-- row -->
       <div class="row">
         <div class="col-md-4" v-for="(project, index) in projects" :key="index">

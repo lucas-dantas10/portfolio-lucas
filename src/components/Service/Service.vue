@@ -61,7 +61,7 @@ export default {
 
 @media only screen and (max-width: 600px) {
   #service {
-    margin-top: 11rem;
+    margin-top: 15rem;
   }
 }
 

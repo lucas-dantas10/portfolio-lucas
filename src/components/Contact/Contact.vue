@@ -23,10 +23,7 @@
             <button class="btn btn-primary mt-5" id="button-send">Enviar Mensagem</button>
         </div>
       </form>
-
     </div>
-
-    <hr>
   </section>
 </template>
 

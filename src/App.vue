@@ -23,6 +23,10 @@
     <div class="container">
       <Contact></Contact>
     </div>
+
+    <div class="container">
+      <Footer></Footer>
+    </div>
     
   </div>
 </template>
@@ -34,6 +38,7 @@ import About from './components/About/About.vue';
 import Service from './components/Service/Service.vue';
 import Portfolio from './components/Portfolio/Portfolio.vue';
 import Contact from './components/Contact/Contact.vue';
+import Footer from './components/Footer/Footer.vue';
 
 export default {
   components: {
@@ -42,7 +47,8 @@ export default {
     About,
     Service,
     Portfolio,
-    Contact
+    Contact,
+    Footer
   }
 }
 </script>

@@ -112,7 +112,7 @@ export default {
 
 @media only screen and (max-width: 600px) {
   #portfolio {
-    height: 85vh;
+    height: 115vh;
   }
 }
 </style>

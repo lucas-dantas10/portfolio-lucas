@@ -46,4 +46,10 @@
         margin-top:10rem;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    #about {
+        height: 90vh;
+    }
+}
 </style>

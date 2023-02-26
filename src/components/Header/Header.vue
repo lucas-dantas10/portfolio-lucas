@@ -42,4 +42,11 @@
         margin: 0;
     }
 }
+
+@media only screen and (max-width: 375px) {
+    #home {
+        margin: 0;
+        height: 70vh;
+    }
+}
 </style>

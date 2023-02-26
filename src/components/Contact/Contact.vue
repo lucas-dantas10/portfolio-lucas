@@ -74,4 +74,11 @@ export default {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  #contact {
+    margin: 0;
+    height: 85vh;
+  }
+}
+
 </style>

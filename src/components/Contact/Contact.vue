@@ -7,11 +7,11 @@
       <form class="form" @submit.prevent="send()">
         <div class="row">
           <div class="form-group col-sm-6">
-            <input type="text" name="nome" class="form-control" placeholder="Seu Nome" />
+            <input type="text" id="text-input" name="nome" class="form-control" placeholder="Seu Nome" required />
           </div>
 
           <div class="form-group col-sm-6">
-            <input type="text" name="email" class="form-control" placeholder="Seu E-mail" />
+            <input type="text" name="email" class="form-control" placeholder="Seu E-mail" required />
           </div>
 
           <div class="form-group mt-4 col-sm-12">
@@ -44,6 +44,7 @@ export default {
 </script>
 
 <style>
+
 #contact {
   margin: 10rem 10rem;
 }
@@ -59,6 +60,18 @@ export default {
     color: var(--white);
     background-color: var(--violet);
     border-color: var(--white);
+}
+
+
+@media only screen and (max-width: 600px) {
+  #contact {
+    margin: 0;
+    height: 60vh;
+  }
+
+  #text-input {
+    margin-bottom: 1.5rem;
+  }
 }
 
 </style>

@@ -23,12 +23,10 @@
 
 <style>
 
-@media only screen and (max-width: 600px) {
-    #about-me {
-        flex-direction: column;
-        margin-top:10rem;
-    }
+#about {
+    margin-bottom: 10rem;
 }
+
 .section {
     height: 50vh;
 }
@@ -40,5 +38,12 @@
 .section-title {
     font-size: 35px;
     color: var(--violet);
+}
+
+@media only screen and (max-width: 600px) {
+    #about-me {
+        flex-direction: column;
+        margin-top:10rem;
+    }
 }
 </style>

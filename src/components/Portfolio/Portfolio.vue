@@ -62,6 +62,11 @@ export default {
 </script>
 
 <style scoped>
+
+#portfolio {
+  margin-bottom: 20rem;
+}
+
 .portfolio-card {
   display: block;
   position: relative;
@@ -103,5 +108,11 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  #portfolio {
+    height: 85vh;
+  }
 }
 </style>

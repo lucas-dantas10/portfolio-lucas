@@ -17,6 +17,13 @@
               src=../../assets/imgs/project-two.png
               class="portfolio-card-img"
               alt="Imagem de um projeto."
+              v-else-if="project.img == 'two'"
+            />
+            <img
+              src=../../assets/imgs/project-three.png
+              style="height: 40.3vh;"
+              class="portfolio-card-img"
+              alt="Imagem de um projeto."
               v-else
             />
             <span class="portfolio-card-overlay" target="_blank">
@@ -52,7 +59,7 @@ export default {
         {
           img: "three",
           title: "Full Stack",
-          subtitle: "Categoria: Laravel 5.8, VueJs, Vuex",
+          subtitle: "Categoria: Laravel 5.8, VueJs, Vuex, Notification, Echo, Web Socket",
           href: "#"
         }
       ]
@@ -115,4 +122,7 @@ export default {
     height: 115vh;
   }
 }
+
+
+
 </style>

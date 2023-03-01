@@ -4,23 +4,42 @@
       <p class="section-subtitle">Como você pode se comunicar?</p>
       <h1 class="section-title mb-5">Contate Me</h1>
 
-      <form class="form" @submit.prevent="send()">
+      <form class="form" @submit.prevent="sendEmail">
         <div class="row">
           <div class="form-group col-sm-6">
-            <input type="text" id="text-input" name="nome" class="form-control" placeholder="Seu Nome" required />
+            <input
+              type="text"
+              id="text-input"
+              v-model="contact.name"
+              class="form-control"
+              placeholder="Seu Nome"
+              required
+            />
           </div>
 
           <div class="form-group col-sm-6">
-            <input type="text" name="email" class="form-control" placeholder="Seu E-mail" required />
+            <input
+              type="email"
+              v-model="contact.email"
+              class="form-control"
+              placeholder="Seu E-mail"
+              required
+            />
           </div>
 
           <div class="form-group mt-4 col-sm-12">
-            <textarea placeholder="Escreva algo" class="form-control"></textarea>
+            <textarea
+              v-model="contact.message"
+              placeholder="Escreva algo"
+              class="form-control"
+            ></textarea>
           </div>
         </div>
 
         <div class="form-group">
-            <button class="btn btn-primary mt-5" id="button-send">Enviar Mensagem</button>
+          <button class="btn btn-primary mt-5" type="submit" id="button-send">
+            Enviar Mensagem
+          </button>
         </div>
       </form>
     </div>
@@ -28,40 +47,84 @@
 </template>
 
 <script>
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
+import emailjs from "emailjs-com";
 
 export default {
-    methods: {
-        send() {
+  data() {
+    return {
+      contact: {
+        name: "",
+        email: "",
+        message: "",
+      },
+    };
+  },
+  methods: {
+    // send() {
+    //   Swal.fire({
+    //     title: "Mensagem enviada!",
+    //     text: "Obrigado por enviar esta mensagem ;)",
+    //     icon: "success",
+    //   });
+    // },
+
+    sendEmail(event) {
+      const templateParans = {
+        name: this.contact.name,
+        email: this.contact.email,
+        message: this.contact.message,
+      };
+      emailjs
+        .send(
+          "service_il1cbic",
+          "template_9fol4op",
+          templateParans,
+          "Mo0mHfqz-r1pWDrbu"
+        )
+        .then(
+          function (response) {
             Swal.fire({
-                title: 'Mensagem enviada!',
-                text: 'Obrigado por enviar esta mensagem ;)',
-                icon: 'success'
+              title: "Mensagem enviada!",
+              text: "Obrigado por enviar esta mensagem ;)",
+              icon: "success",
             });
-        }
-    }
-}
+          },
+          function (error) {
+            Swal.fire({
+              title: "Erro ao enviar a mensagem!",
+              text: "Desculpa :(",
+              icon: "error",
+            });
+            return;
+          }
+        );
+
+      this.contact.name = "";
+      this.contact.email = "";
+      this.contact.message = "";
+    },
+  },
+};
 </script>
 
 <style>
-
 #contact {
   margin: 10rem 10rem;
 }
 
 #button-send {
-    background-color: var(--white);
-    border-color: var(--violet);
-    color: var(--violet);
-    transition: .5s ease-in-out;
+  background-color: var(--white);
+  border-color: var(--violet);
+  color: var(--violet);
+  transition: 0.5s ease-in-out;
 }
 
 #button-send:hover {
-    color: var(--white);
-    background-color: var(--violet);
-    border-color: var(--white);
+  color: var(--white);
+  background-color: var(--violet);
+  border-color: var(--white);
 }
-
 
 @media only screen and (max-width: 600px) {
   #contact {
@@ -80,5 +143,4 @@ export default {
     height: 85vh;
   }
 }
-
 </style>

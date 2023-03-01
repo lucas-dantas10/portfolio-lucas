@@ -61,15 +61,8 @@ export default {
     };
   },
   methods: {
-    // send() {
-    //   Swal.fire({
-    //     title: "Mensagem enviada!",
-    //     text: "Obrigado por enviar esta mensagem ;)",
-    //     icon: "success",
-    //   });
-    // },
-
     sendEmail(event) {
+      NProgress.start();
       const templateParans = {
         name: this.contact.name,
         email: this.contact.email,
@@ -84,6 +77,7 @@ export default {
         )
         .then(
           function (response) {
+            NProgress.done();
             Swal.fire({
               title: "Mensagem enviada!",
               text: "Obrigado por enviar esta mensagem ;)",
@@ -100,15 +94,38 @@ export default {
           }
         );
 
-      this.contact.name = "";
-      this.contact.email = "";
-      this.contact.message = "";
+        this.contact.name = "";
+        this.contact.email = "";
+        this.contact.message = "";
     },
   },
 };
 </script>
 
 <style>
+
+#nprogress .spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1031;
+  height: 100vh;
+  width: 100vw;
+}
+
+#nprogress .spinner-icon {
+  width: 10rem;
+  height: 10rem;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-top-color: #29d;
+  border-left-color: #29d;
+  border-radius: 50%;
+
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+          animation: nprogress-spinner 400ms linear infinite;
+}
+
 #contact {
   margin: 10rem 10rem;
 }

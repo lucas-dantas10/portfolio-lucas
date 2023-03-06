@@ -11,7 +11,7 @@
                     <p>
                         Profissional com experiência de menos de 1 ano na área de TI, em busca de ganhar experiência
                         e conhecimento nas linguagens de programação, se desenvolver como profissional e sempre com
-                        vontade de aprender mais. Hoje atuo como estágiário na Credit Cash, trabalhando com PHP, Laravel, Vuejs, Javascript, Html5, Css3.
+                        vontade de aprender mais. Hoje atuo como estágiário na Credit Cash, trabalhando com PHP, Laravel, Vuejs, Javascript, MySql, SqlServer, Html5, Css3, Apache.
                     </p>
                     <a href="https://drive.google.com/file/d/1ocreTfy0QALbrQeixBA3j8Q89PxO5fae/view" download="Lucas-Dantas.pdf" target="_blank" class="btn-rounded btn btn-outline-primary mt-4">Download CV</a>
                 </div>              

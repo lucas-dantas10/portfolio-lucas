@@ -6,13 +6,19 @@
             <h6 class="copyright">Copyright 2023 © Lucas Dantas Nogueira</h6>
             <ul class="list-group d-flex align-items-center flex-row">
                 <li class="list-group-item" id="items">
-                    <font-awesome-icon class="icons" :icon="{ prefix: 'fab', iconName: 'facebook' }"/>
+                    <a href="https://github.com/lucas-dantas10" target="_blank" class="link">
+                        <font-awesome-icon class="icons" :icon="{ prefix: 'fab', iconName: 'github' }"/>
+                    </a>                    
                 </li>
                 <li class="list-group-item" id="items">
-                    <font-awesome-icon class="icons" :icon="{ prefix: 'fab', iconName: 'twitter' }"/>
+                    <a href="https://www.linkedin.com/in/lucas-dantas-197549236/" target="_blank" class="link">
+                        <font-awesome-icon class="icons" :icon="{ prefix: 'fab', iconName: 'linkedin' }"/>
+                    </a>
                 </li>
-                <li class="list-group-item" id="items">
-                    <font-awesome-icon class="icons" :icon="{ prefix: 'fab', iconName: 'instagram' }"/>
+                <li class="list-group-item"  id="items">
+                    <a href="" target="_blank" class="link">
+                        <font-awesome-icon class="icons" :icon="{ prefix: 'fab', iconName: 'instagram' }"/>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -36,6 +42,11 @@
 #items:hover {
     cursor: pointer;
     background-color: var(--violet);
+}
+
+.link {
+    text-decoration: none;
+    color: black;
 }
 
 .icons {

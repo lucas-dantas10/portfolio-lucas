@@ -11,6 +11,10 @@
         </li>
 
         <li class="nav-item d-none">
+          <a class="nav-link" href="#service">Serviços</a>
+        </li>
+
+        <li class="nav-item d-none">
           <a class="nav-link" href="#portfolio">Portfólio</a>
         </li>
 

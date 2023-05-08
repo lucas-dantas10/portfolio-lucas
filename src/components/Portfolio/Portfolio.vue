@@ -5,7 +5,7 @@
       <h6 class="section-title mb-6">Portfólio</h6>
       <!-- row -->
       <div class="row">
-        <div class="col-md-4" v-for="project in projects">
+        <div class="portfolio-container col-md-4" v-for="project in projects">
           <a :href="project.href" class="portfolio-card">
             <img
               :src=project.img
@@ -48,14 +48,21 @@ export default {
 </script>
 
 <style scoped>
+
+.portfolio-container {
+  height: 30vh;
+}
 .portfolio-card {
   display: block;
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 
 .portfolio-card img {
   width: 600px;
+  max-height: 100%;
+  height: 100%;
 }
 
 .portfolio-card:hover .portfolio-card-overlay {

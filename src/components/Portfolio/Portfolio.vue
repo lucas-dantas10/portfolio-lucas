@@ -6,25 +6,12 @@
       <!-- row -->
       <div class="row">
         <div class="portfolio-container col-md-4" v-for="project in projects">
-          <a :href="project.href" class="portfolio-card">
+          <a :href="project.href" target="_blank" class="portfolio-card">
             <img
-              src=../../assets/imgs/project-one.png
+              :src="project.img"
               class="portfolio-card-img"
-              alt="Imagem de um projeto."
-              v-if="project.img === 'one'"
+              :alt="project.title"
             />
-            <img
-              src=../../assets/imgs/project-two.png
-              class="portfolio-card-img"
-              alt="Imagem de um projeto."
-              v-else-if="project.img == 'two'"
-            />
-            <img
-              src=../../assets/imgs/project-three.png
-              style="height: 40.3vh;"
-              class="portfolio-card-img"
-              alt="Imagem de um projeto."
-              v-else
             />
             <span class="portfolio-card-overlay" target="_blank">
               <span class="portfolio-card-caption">
@@ -45,19 +32,19 @@ export default {
     return {
       projects: [
         {
-          img: "one",
+          img: "/src/assets/imgs/project-one.png",
           title: 'Front End',
           subtitle: 'Categoria: VueJs, vue-router',
           href: '#'
         },
         {
-          img: "two",
+          img: "/src/assets/imgs/project-two.png",
           title: "Front End",
           subtitle: "Categoria: Html5, Css3, Javascript",
           href: "https://lucas-dantas10.github.io/hzc.github.io/"
         },
         {
-          img: "three",
+          img: "/src/assets/imgs/project-three.png",
           title: "Full Stack",
           subtitle: "Categoria: Laravel 5.8, VueJs, Vuex, Notification, Echo, Web Socket",
           href: "#"

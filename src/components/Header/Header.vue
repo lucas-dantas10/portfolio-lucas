@@ -14,6 +14,10 @@
 </template>
 
 <style scoped>
+
+#home {
+    margin-bottom: 12rem;
+}
 .header {
     margin: 4rem 8rem;
     height: 50vh;
@@ -31,5 +35,18 @@
 
 .btn {
     border-radius: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    #home {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #home {
+        margin: 0;
+        height: 70vh;
+    }
 }
 </style>

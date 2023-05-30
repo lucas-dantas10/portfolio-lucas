@@ -5,10 +5,9 @@
       <div class="content" ref="content">
         <TransitionGroup name="list">
           <li class="nav-item" ref="navItem" v-for="(menu, index) in menuItems" :key="index">
-            <a class="nav-link" :href="menu.href">{{menu.name}}</a>
+            <a class="nav-link" :href="menu.href">{{ menu.name }}</a>
           </li>
         </TransitionGroup>
-
         <input class="checkbox" type="checkbox" @click="open()" id="checkbox-menu" />
 
         <label for="checkbox-menu">
@@ -55,20 +54,19 @@ export default {
 
   methods: {
     open() {
-
+      this.$refs.content.classList.toggle('content-sidebar');
       this.menuItems.length === 0 ? this.menuItems = this.defaultItems : this.menuItems = [];
-
     },
   },
 };
 </script>
 
 <style scoped>
-
 .list-enter-active,
 .list-leave-active {
   transition: all 0.5s ease;
 }
+
 .list-enter-from,
 .list-leave-to {
   opacity: 0;

@@ -32,19 +32,19 @@ export default {
     return {
       projects: [
         {
-          img: "/src/assets/imgs/project-one.png",
+          img: "/src/assets/imgs/alura.png",
           title: 'Front End',
           subtitle: 'Categoria: VueJs, vue-router',
           href: '#'
         },
         {
-          img: "/src/assets/imgs/project-two.png",
+          img: "/src/assets/imgs/hzc.png",
           title: "Front End",
           subtitle: "Categoria: Html5, Css3, Javascript",
           href: "https://lucas-dantas10.github.io/hzc.github.io/"
         },
         {
-          img: "/src/assets/imgs/project-three.png",
+          img: "/src/assets/imgs/notification.png",
           title: "Full Stack",
           subtitle: "Categoria: Laravel 5.8, VueJs, Vuex, Notification, Echo, Web Socket",
           href: "#"

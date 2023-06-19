@@ -26,9 +26,9 @@
 </template>
 
 <script>
-import image1 from '../../assets/imgs/project-one.png';
-import image2 from '../../assets/imgs/project-two.png';
-import image3 from '../../assets/imgs/project-three.png';
+import image1 from '../../assets/imgs/hzc-alura.png';
+import image2 from '../../assets/imgs/alura.png';
+import image3 from '../../assets/imgs/notification.png';
 export default {
   data() {
     return {

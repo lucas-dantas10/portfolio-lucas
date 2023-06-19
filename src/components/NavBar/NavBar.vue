@@ -3,31 +3,12 @@
     <a class="navbar-brand" id="navbar-brand" href="#">Lucas</a>
     <ul class="nav nav-pills">
       <div class="content" ref="content">
-        <li class="nav-item d-none">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item d-none">
-          <a class="nav-link" href="#about">Sobre</a>
-        </li>
-
-        <li class="nav-item d-none">
-          <a class="nav-link" href="#service">Serviços</a>
-        </li>
-
-        <li class="nav-item d-none">
-          <a class="nav-link" href="#portfolio">Portfólio</a>
-        </li>
-
-        <li class="nav-item d-none">
-          <a class="nav-link" href="#contact">Contato</a>
-        </li>
-
-        <input
-          class="checkbox"
-          type="checkbox"
-          @click="open()"
-          id="checkbox-menu"
-        />
+        <TransitionGroup name="list">
+          <li class="nav-item" ref="navItem" v-for="(menu, index) in menuItems" :key="index">
+            <a class="nav-link" :href="menu.href">{{ menu.name }}</a>
+          </li>
+        </TransitionGroup>
+        <input class="checkbox" type="checkbox" @click="open()" id="checkbox-menu" />
 
         <label for="checkbox-menu">
           <span></span>
@@ -41,21 +22,57 @@
 
 <script>
 export default {
+
+  data() {
+    return {
+      menuItems: [],
+
+      defaultItems: [
+        {
+          name: 'Home',
+          href: '#'
+        },
+        {
+          name: 'Sobre',
+          href: '#about'
+        },
+        {
+          name: 'Serviços',
+          href: '#service'
+        },
+        {
+          name: 'Portfólio',
+          href: '#portfolio'
+        },
+        {
+          name: 'Contato',
+          href: '#contact'
+        },
+      ]
+    }
+  },
+
   methods: {
     open() {
-      const items = document.querySelectorAll(".nav-item");
-      const contentMenu = this.$refs.content;
-
-      items.forEach(item => {
-        item.classList.toggle('d-none');
-        contentMenu.classList.toggle('content-sidebar');
-      })
+      this.$refs.content.classList.toggle('content-sidebar');
+      this.menuItems.length === 0 ? this.menuItems = this.defaultItems : this.menuItems = [];
     },
   },
 };
 </script>
 
 <style scoped>
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
 
 #navbar-example2 {
   padding-top: 2rem;
@@ -118,23 +135,23 @@ export default {
   top: 16px;
 }
 
-.nav .content #checkbox-menu:checked + label span:nth-child(1) {
+.nav .content #checkbox-menu:checked+label span:nth-child(1) {
   transform: rotate(-45deg);
   top: 8px;
 }
 
-.nav .content #checkbox-menu:checked + label span:nth-child(2) {
+.nav .content #checkbox-menu:checked+label span:nth-child(2) {
   opacity: 0;
 }
 
-.nav .content #checkbox-menu:checked + label span:nth-child(3) {
+.nav .content #checkbox-menu:checked+label span:nth-child(3) {
   transform: rotate(45deg);
   top: 8px;
 }
 
 @media only screen and (max-width: 600px) {
 
-  
+
   @keyframes sidebar {
     0% {
       width: 5%;
@@ -152,6 +169,7 @@ export default {
       width: 40%;
     }
   }
+
   .nav .content-sidebar {
     animation: sidebar;
     animation-duration: initial;

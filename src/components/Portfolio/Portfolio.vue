@@ -8,7 +8,7 @@
         <div class="portfolio-container col-md-4" v-for="project in projects">
           <a :href="project.href" target="_blank" class="portfolio-card">
             <img
-              :src="-project.img"
+              :src="project.img"
               class="portfolio-card-img"
               :alt="project.title"
             />
@@ -26,8 +26,8 @@
 </template>
 
 <script>
-import image1 from '../../assets/imgs/hzc-alura.png';
-import image2 from '../../assets/imgs/alura.png';
+import image1 from '../../assets/imgs/alura.png';
+import image2 from '../../assets/imgs/hzc-alura.png';
 import image3 from '../../assets/imgs/notification.png';
 export default {
   data() {
@@ -53,6 +53,10 @@ export default {
         }
       ]
     }
+  },
+
+  mounted() {
+    console.log(this.projects[0].img);
   }
 }
 </script>
@@ -60,7 +64,7 @@ export default {
 <style scoped>
 
 .portfolio-container {
-  height: 30vh;
+  height: 40vh;
 }
 .portfolio-card {
   display: block;

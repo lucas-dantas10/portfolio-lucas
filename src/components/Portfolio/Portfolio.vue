@@ -3,7 +3,7 @@
     <div class="container text-center">
       <p class="section-subtitle">O que eu fiz ?</p>
       <h6 class="section-title mb-5">Portfólio</h6>
-      <!-- row -->
+
       <div class="row">
         <div class="portfolio-container col-md-4" v-for="project in projects">
           <a :href="project.href" target="_blank" class="portfolio-card">
@@ -11,7 +11,6 @@
               :src="-project.img"
               class="portfolio-card-img"
               :alt="project.title"
-            />
             />
             <span class="portfolio-card-overlay" target="_blank">
               <span class="portfolio-card-caption">
@@ -27,24 +26,27 @@
 </template>
 
 <script>
+import image1 from '../../assets/imgs/hzc-alura.png';
+import image2 from '../../assets/imgs/alura.png';
+import image3 from '../../assets/imgs/notification.png';
 export default {
   data() {
     return {
       projects: [
         {
-          img: "/src/assets/imgs/alura.png",
+          img: image1,
           title: 'Front End',
           subtitle: 'Categoria: VueJs, vue-router',
           href: '#'
         },
         {
-          img: "/src/assets/imgs/hzc.png",
+          img: image2,
           title: "Front End",
           subtitle: "Categoria: Html5, Css3, Javascript",
           href: "https://lucas-dantas10.github.io/hzc.github.io/"
         },
         {
-          img: "/src/assets/imgs/notification.png",
+          img: image3,
           title: "Full Stack",
           subtitle: "Categoria: Laravel 5.8, VueJs, Vuex, Notification, Echo, Web Socket",
           href: "#"

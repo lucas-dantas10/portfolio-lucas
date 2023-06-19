@@ -94,10 +94,4 @@
         height: 110vh;
     }
 }
-
-/* @media only screen and (max-width: 600px) {
-    #about {
-        height: 90vh;
-    }
-} */
 </style>

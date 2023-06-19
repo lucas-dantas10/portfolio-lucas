@@ -1,20 +1,46 @@
 <template>
     <section class="section pt-0" id="about">
         <div class="container text-center">            
-            <div class="about d-flex align-items-center" id="about-me">
+            <div class="about d-flex" id="about-me">
                 <div class="about-img-holder">
-                    <img src="../../assets/imgs/lucas.png" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    <img src="../../assets/imgs/lucas.png" class="about-img mt-5" alt="Imagem do Lucas em Avatar">
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Quem Eu Sou ?</p>
                     <h2 class="section-title mb-3">Sobre Mim</h2>
                     <p>
-                        Profissional com experiência de menos de 1 ano na área de TI, em busca de ganhar experiência
-                        e conhecimento nas linguagens de programação, se desenvolver como profissional e sempre com
-                        vontade de aprender mais. Hoje atuo como estágiário na Credit Cash, trabalhando com PHP, Laravel, Vuejs, Javascript, MySql, SqlServer, Html5, Css3, Apache.
+                        Desenvolvedor Full Stack com mais de 1 ano de experiência na área de desenvolvimento de software, tendo como principais
+                        linguagens de programação o Laravel, Vuejs e Python, para o banco de dados o MySql e SqlServer, para servidor web
+                        Apache e Docker. Minha primeira oportunidade foi na Credit Cash como estagiário de desenvolvimento, acompanhando
+                        e desenvolvendo sistemas em equipe e aprendendo muito, fui efetivado para analista de desenvolvimento treinee, 
+                        atuando em sistemas mais robustos, aprendendo mais sobre arquiteturas e muito mais. Com grande paixão pela programação 
+                        e dedicação em aprender, busco continuar a crescer e aprimorar minhas habilidades em desenvolvimento de software.
                     </p>
+
+                    <div class="about-languages mt-3">
+                        <h4 class="title-language">Idiomas</h4>
+
+                        <div class="container-languages">
+                            <img src="../../assets/imgs/brasil.webp" alt="" style="width: 110px;">
+
+                            <ul class="d-flex flex-column align-items-start list-unstyled">
+                                <li class="fs-4">Português</li>
+                                <li>Nativo</li>
+                            </ul>
+                        </div>
+
+                        <div class="container-languages">
+                            <img src="../../assets/imgs/eua.webp" alt="" style="width: 110px;">
+
+                            <ul class="d-flex flex-column align-items-start list-unstyled">
+                                <li class="fs-4">Inglês</li>
+                                <li>Intermediário</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <a href="https://drive.google.com/file/d/1M-j9zywCeYQS7JSOIXti9qp3l_GWplYj/view?usp=sharing" download="Lucas-Dantas.pdf" target="_blank" class="btn-rounded btn btn-outline-primary mt-4">Download CV</a>
-                </div>              
+                </div>                  
             </div>
         </div>
     </section> 
@@ -28,7 +54,7 @@
 }
 
 .section {
-    height: 50vh;
+    height: 70vh;
 }
 
 .section-subtitle {
@@ -40,6 +66,22 @@
     color: var(--violet);
 }
 
+.title-language {
+    color: var(--violet);
+}
+
+.about-languages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.about-languages .container-languages {
+    display: flex;
+    gap: 1rem;
+}
+
 @media only screen and (max-width: 600px) {
     #about-me {
         flex-direction: column;
@@ -47,9 +89,15 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1366px ) {
+    .section {
+        height: 110vh;
+    }
+}
+
+/* @media only screen and (max-width: 600px) {
     #about {
         height: 90vh;
     }
-}
+} */
 </style>

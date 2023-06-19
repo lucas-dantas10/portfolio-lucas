@@ -39,7 +39,7 @@ export default {
         {
           icon: "construction",
           title: "Habilidades FrontEnd",
-          subtitle: "HTML5, Css3, sass, bootstrap, VueJs",
+          subtitle: "HTML5, Css3, sass, bootstrap, VueJs, tailwind",
         },
         {
           icon: "engineering",

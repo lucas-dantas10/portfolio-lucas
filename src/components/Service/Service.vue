@@ -58,10 +58,6 @@ export default {
 </script>
 
 <style scoped>
-
-#service {
-  margin-bottom: 16rem;
-}
 .row {
   margin-top: 4rem;
 }

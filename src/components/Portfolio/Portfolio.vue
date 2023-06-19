@@ -8,7 +8,7 @@
         <div class="portfolio-container col-md-4" v-for="project in projects">
           <a :href="project.href" target="_blank" class="portfolio-card">
             <img
-              :src="project.img"
+              :src="-project.img"
               class="portfolio-card-img"
               :alt="project.title"
             />

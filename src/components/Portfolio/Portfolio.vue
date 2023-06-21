@@ -4,7 +4,7 @@
       <p class="section-subtitle">O que eu fiz ?</p>
       <h6 class="section-title mb-5">Portfólio</h6>
 
-      <div class="row">
+      <div class="row portfolio-project">
         <div class="portfolio-container col-md-4" v-for="project in projects">
           <a :href="project.href" target="_blank" class="portfolio-card">
             <img
@@ -54,10 +54,6 @@ export default {
       ]
     }
   },
-
-  mounted() {
-    console.log(this.projects[0].img);
-  }
 }
 </script>
 
@@ -66,6 +62,7 @@ export default {
 .portfolio-container {
   height: 40vh;
 }
+
 .portfolio-card {
   display: block;
   position: relative;
@@ -113,8 +110,12 @@ export default {
 }
 
 @media only screen and (max-width: 600px) {
-  #portfolio {
-    height: 115vh;
+  .portfolio-container {
+    height: 25vh;
+  }
+
+  .portfolio-project {
+    gap: 1.5rem;
   }
 }
 

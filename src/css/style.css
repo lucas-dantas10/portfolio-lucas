@@ -45,5 +45,13 @@
   );
 }
 
+.primary-text {
+  color: var(--violet);
+}
+
+.secundary-text {
+  color: var(--gray-600);
+}
+
 
 

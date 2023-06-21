@@ -1,8 +1,8 @@
 <template>
   <section class="section" id="service">
     <div class="container text-center">
-      <p class="section-subtitle">O que eu faço ?</p>
-      <h6 class="section-title mb-6">Serviço</h6>
+      <p class="secundary-text">O que eu faço ?</p>
+      <h1 class="primary-text mb-5">Serviço</h1>
       <!-- row -->
       <div class="row d-flex justify-content-between align-items-center">
         <div class="col-md-6 col-lg-3" v-for="service in services">
@@ -58,6 +58,11 @@ export default {
 </script>
 
 <style scoped>
+
+#service {
+  height: 100%;
+  margin-bottom: 10rem;
+}
 .row {
   margin-top: 4rem;
 }

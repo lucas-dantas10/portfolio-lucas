@@ -1,8 +1,8 @@
 <template>
   <section id="contact" class="section">
     <div class="container text-center">
-      <p class="section-subtitle">Como você pode se comunicar?</p>
-      <h1 class="section-title mb-5">Contate Me</h1>
+      <p class="secundary-text">Como você pode se comunicar?</p>
+      <h1 class="primary-text mb-5">Contate Me</h1>
 
       <form class="form" @submit.prevent="sendEmail">
         <div class="row">

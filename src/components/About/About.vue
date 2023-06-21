@@ -7,12 +7,12 @@
                 </div>
                 <div class="about-caption">
                     <p class="section-subtitle">Quem Eu Sou ?</p>
-                    <h2 class="section-title mb-3">Sobre Mim</h2>
+                    <h2 class="section-title mb-5">Sobre Mim</h2>
                     <p>
                         Desenvolvedor Full Stack com mais de 1 ano de experiência na área de desenvolvimento de software, tendo como principais
                         linguagens de programação o Laravel, Vuejs e Python, para o banco de dados o MySql e SqlServer, para servidor web
                         Apache e Docker. Minha primeira oportunidade foi na Credit Cash como estagiário de desenvolvimento, acompanhando
-                        e desenvolvendo sistemas em equipe e aprendendo muito, fui efetivado para analista de desenvolvimento treinee, 
+                        e desenvolvendo sistemas em equipe e aprendendo muito, fui efetivado para analista de desenvolvimento junior, 
                         atuando em sistemas mais robustos, aprendendo mais sobre arquiteturas e muito mais. Com grande paixão pela programação 
                         e dedicação em aprender, busco continuar a crescer e aprimorar minhas habilidades em desenvolvimento de software.
                     </p>
@@ -47,14 +47,11 @@
 
 </template>
 
-<style>
-
-#about {
-    margin-bottom: 10rem;
-}
+<style scoped>
 
 .section {
-    height: 70vh;
+    height: 100%;
+    margin-bottom: 10rem;
 }
 
 .section-subtitle {
@@ -91,7 +88,7 @@
 
 @media only screen and (max-width: 1366px ) {
     .section {
-        height: 110vh;
+        height: 100%;
     }
 }
 </style>

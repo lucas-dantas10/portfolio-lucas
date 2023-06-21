@@ -1,8 +1,8 @@
 <template>
   <section class="section" id="portfolio">
     <div class="container text-center">
-      <p class="section-subtitle">O que eu fiz ?</p>
-      <h6 class="section-title mb-5">Portfólio</h6>
+      <p class="secundary-text">O que eu fiz ?</p>
+      <h1 class="primary-text mb-5">Portfólio</h1>
 
       <div class="row portfolio-project">
         <div class="portfolio-container col-md-4" v-for="project in projects">
@@ -59,9 +59,15 @@ export default {
 
 <style scoped>
 
-.portfolio-container {
-  height: 40vh;
+#portfolio {
+  height: 100%;
+  margin-bottom: 10rem;
 }
+
+/* .portfolio-container {
+  height: 40vh;
+  margin
+} */
 
 .portfolio-card {
   display: block;

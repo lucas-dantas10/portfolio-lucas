@@ -49,7 +49,7 @@ export default {
         {
           icon: "work_history",
           title: "Experência Profissional",
-          subtitle: "Estagiário de desenvolvimento na Credit Cash, iniciado em junho de 2022 até atualmente"
+          subtitle: "Estagiário de desenvolvimento na Credit Cash, iniciado em junho de 2022 até junho de 2023"
         }
       ],
     };

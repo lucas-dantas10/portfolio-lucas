@@ -1,6 +1,6 @@
 <template>
     <section class="section pt-0" id="about">
-        <div class="container text-center">            
+        <div class="container text-center">
             <div class="about d-flex" id="about-me">
                 <div class="about-img-holder">
                     <img src="../../assets/imgs/lucas.png" class="about-img mt-5" alt="Imagem do Lucas em Avatar">
@@ -10,8 +10,8 @@
                     <h2 class="section-title mb-5">Sobre Mim</h2>
                     <p>
                         Desenvolvedor Full Stack com mais de 1 ano de experiência na área de desenvolvimento de software, tendo como principais
-                        linguagens de programação o Laravel, Vuejs e Python, para o banco de dados o MySql e SqlServer, para servidor web
-                        Apache e Docker. Minha primeira oportunidade foi na Credit Cash como estagiário de desenvolvimento, acompanhando
+                        linguagens de programação o <span class="emphases">Laravel, Vuejs e Python, para o banco de dados o MySql e SqlServer, para servidor web
+                        Apache e Docker.</span> Minha primeira oportunidade foi na Credit Cash como estagiário de desenvolvimento, acompanhando
                         e desenvolvendo sistemas em equipe e aprendendo muito, fui efetivado para analista de desenvolvimento junior, 
                         atuando em sistemas mais robustos, aprendendo mais sobre arquiteturas e muito mais. Com grande paixão pela programação 
                         e dedicação em aprender, busco continuar a crescer e aprimorar minhas habilidades em desenvolvimento de software.
@@ -47,6 +47,16 @@
 
 </template>
 
+<script>
+    import BtnGoTop from '../Button/BtnGoTop.vue';
+
+    export default {
+        components: {
+            BtnGoTop
+        }
+    }
+</script>
+
 <style scoped>
 
 .section {
@@ -77,6 +87,11 @@
 .about-languages .container-languages {
     display: flex;
     gap: 1rem;
+}
+
+.emphases {
+    color: var(--violet);
+    font-weight: 900;
 }
 
 @media only screen and (max-width: 600px) {

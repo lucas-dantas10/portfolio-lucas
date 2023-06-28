@@ -1,34 +1,35 @@
 <template>
-  <div class="main">
-    <div class="container">
-      <NavBar></NavBar>
-    </div>
+    <div class="main">
+        <div class="container">
+            <NavBar></NavBar>
+        </div>
 
-    <div class="container">
-      <Header></Header>
-    </div>
+        <div class="container">
+            <Header></Header>
+        </div>
 
-    <div class="container">
-      <About></About>
-    </div>
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <About></About>
+        </div>
 
-    <div class="container">
-      <Service></Service>
-    </div>
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <Service></Service>
+        </div>
 
-    <div class="container">
-      <Portfolio></Portfolio>
-    </div>
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <Portfolio></Portfolio>
+        </div>
 
-    <div class="container">
-      <Contact></Contact>
-    </div>
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+            <Contact></Contact>
+        </div>
 
-    <div class="container">
-      <Footer></Footer>
+        <div class="container">
+            <Footer></Footer>
+            <BtnGoTop></BtnGoTop>
+        </div>
+
     </div>
-    
-  </div>
 </template>
 
 <script>
@@ -39,16 +40,18 @@ import Service from './components/Service/Service.vue';
 import Portfolio from './components/Portfolio/Portfolio.vue';
 import Contact from './components/Contact/Contact.vue';
 import Footer from './components/Footer/Footer.vue';
+import BtnGoTop from './components/Button/BtnGoTop.vue';
 
 export default {
-  components: {
+    components: {
     NavBar,
     Header,
     About,
     Service,
     Portfolio,
     Contact,
-    Footer
-  }
+    Footer,
+    BtnGoTop
+}
 }
 </script>

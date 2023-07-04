@@ -9,12 +9,18 @@
                     <p class="section-subtitle">Quem Eu Sou ?</p>
                     <h2 class="section-title mb-5">Sobre Mim</h2>
                     <p>
-                        Desenvolvedor Full Stack com mais de 1 ano de experiência na área de desenvolvimento de software, tendo como principais
-                        linguagens de programação o <span class="emphases">Laravel, Vuejs e Python, para o banco de dados o MySql e SqlServer, para servidor web
-                        Apache e Docker.</span> Minha primeira oportunidade foi na Credit Cash como estagiário de desenvolvimento, acompanhando
-                        e desenvolvendo sistemas em equipe e aprendendo muito, fui efetivado para analista de desenvolvimento junior, 
-                        atuando em sistemas mais robustos, aprendendo mais sobre arquiteturas e muito mais. Com grande paixão pela programação 
-                        e dedicação em aprender, busco continuar a crescer e aprimorar minhas habilidades em desenvolvimento de software.
+                        Desenvolvedor Full Stack com mais de 1 ano de experiência na área de desenvolvimento de software,
+                        tendo como principais
+                        linguagens de programação o <span class="emphases">Laravel, Vuejs e Python, para o banco de dados o
+                            MySql e SqlServer, para servidor web
+                            Apache e Docker.</span> Minha primeira oportunidade foi na Credit Cash como estagiário de
+                        desenvolvimento, acompanhando
+                        e desenvolvendo sistemas em equipe e aprendendo muito, fui efetivado para analista de
+                        desenvolvimento junior,
+                        atuando em sistemas mais robustos, aprendendo mais sobre arquiteturas e muito mais. Com grande
+                        paixão pela programação
+                        e dedicação em aprender, busco continuar a crescer e aprimorar minhas habilidades em desenvolvimento
+                        de software.
                     </p>
 
                     <div class="about-languages mt-3">
@@ -39,26 +45,26 @@
                         </div>
                     </div>
 
-                    <a href="https://drive.google.com/file/d/1M-j9zywCeYQS7JSOIXti9qp3l_GWplYj/view?usp=sharing" download="Lucas-Dantas.pdf" target="_blank" class="btn-rounded btn btn-outline-primary mt-4">Download CV</a>
-                </div>                  
+                    <a href="https://drive.google.com/file/d/1M-j9zywCeYQS7JSOIXti9qp3l_GWplYj/view?usp=sharing"
+                        download="Lucas-Dantas.pdf" target="_blank"
+                        class="btn-rounded btn btn-outline-primary mt-4">Download CV</a>
+                </div>
             </div>
         </div>
-    </section> 
-
+    </section>
 </template>
 
 <script>
-    import BtnGoTop from '../Button/BtnGoTop.vue';
+import BtnGoTop from '../Button/BtnGoTop.vue';
 
-    export default {
-        components: {
-            BtnGoTop
-        }
-    }
+export default {
+    components: {
+        BtnGoTop
+    },
+}
 </script>
 
 <style scoped>
-
 .section {
     height: 100%;
     margin-bottom: 10rem;
@@ -97,13 +103,12 @@
 @media only screen and (max-width: 600px) {
     #about-me {
         flex-direction: column;
-        margin-top:10rem;
+        margin-top: 10rem;
     }
 }
 
-@media only screen and (max-width: 1366px ) {
+@media only screen and (max-width: 1366px) {
     .section {
         height: 100%;
     }
-}
-</style>
+}</style>

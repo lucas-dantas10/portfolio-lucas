@@ -1,7 +1,9 @@
-# Vue 3 + Vite
+# Portfólio
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Este projeto é um site que mostra um pouco sobre mim mostrando minha evolução e experiência na área, no site você encontrará 
+os projetos pessoais que realizei, experiências profissionais, tecnologias que utilizo.
 
-## Recommended IDE Setup
+## Contato
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Email: lucas.dantas.nogueira@gmail.com
+- LinkedIn: https://www.linkedin.com/in/lucas-dantas10/

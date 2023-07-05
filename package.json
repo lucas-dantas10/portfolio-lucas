@@ -13,11 +13,13 @@
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.0-alpha1",
     "emailjs-com": "^3.2.0",
     "netlify-cli": "^13.0.0",
     "sweetalert2": "^11.7.2",
     "vue": "^3.2.45",
+    "vue-backtotop": "^1.6.1",
     "vue-loading-overlay": "^6.0.3"
   },
   "devDependencies": {

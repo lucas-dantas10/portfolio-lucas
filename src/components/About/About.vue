@@ -11,13 +11,15 @@
                     <p>
                         Desenvolvedor Full Stack com mais de 1 ano de experiência na área de desenvolvimento de software,
                         tendo como principais
-                        linguagens de programação o <span class="emphases">Laravel, Vuejs e Python, para o banco de dados o
-                            MySql e SqlServer, para servidor web
+                        linguagens de programação no FrontEnd o <span class="emphases">Vuejs e pro BackEnd o Laravel e 
+                            python, para o banco de dados o
+                            MySql e SqlServer, e conhecimentos em
                             Apache e Docker.</span> Minha primeira oportunidade foi na Credit Cash como estagiário de
                         desenvolvimento, acompanhando
                         e desenvolvendo sistemas em equipe e aprendendo muito, fui efetivado para analista de
                         desenvolvimento junior,
-                        atuando em sistemas mais robustos, aprendendo mais sobre arquiteturas e muito mais. Com grande
+                        atuando em sistemas mais robustos, aprendendo mais sobre arquiteturas, aprofundando mais nas linguagens
+                        e muito mais. Com grande
                         paixão pela programação
                         e dedicação em aprender, busco continuar a crescer e aprimorar minhas habilidades em desenvolvimento
                         de software.

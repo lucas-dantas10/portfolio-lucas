@@ -9,10 +9,10 @@ import AOS from 'aos'
 import BackToTop from 'vue-backtotop';
 
 import 'vue-loading-overlay/dist/css/index.css';
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.js";
 import 'aos/dist/aos.css'
 import './css/style.css';
+// import "bootstrap/dist/js/bootstrap.js";
+// import "bootstrap/dist/css/bootstrap.css";
 
 library.add([
     faGithub, faLinkedin, faInstagram, faArrowUp
@@ -21,9 +21,9 @@ library.add([
 AOS.init();
 
 createApp(App)
-.use(BackToTop)
 .component('font-awesome-icon', FontAwesomeIcon)
 .component('loading', Loading)
+.use(BackToTop)
 .mount('#app');
 
 

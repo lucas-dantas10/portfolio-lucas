@@ -16,7 +16,7 @@
             <Service></Service>
         </div>
 
-        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
             <Portfolio></Portfolio>
         </div>
 
@@ -44,14 +44,14 @@ import BtnGoTop from './components/Button/BtnGoTop.vue';
 
 export default {
     components: {
-    NavBar,
-    Header,
-    About,
-    Service,
-    Portfolio,
-    Contact,
-    Footer,
-    BtnGoTop
-}
+        NavBar,
+        Header,
+        About,
+        Service,
+        Portfolio,
+        Contact,
+        Footer,
+        BtnGoTop
+    }
 }
 </script>

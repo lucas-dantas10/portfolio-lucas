@@ -83,8 +83,8 @@ export default {
                     img: todolist,
                     title: "TodoList",
                     state: 'Em Desenvolvimento || Mobile First',
-                    category: "Laravel 10, VueJs, Vuex, tailwind",
-                    description: 'Projeto pessoal que consiste em um site que pode adicionar tarefas, adicionar categorias e o dia para serem realizadas, terá área de perfil, de cronômetro, calendário para consultar as tarefas. Este projeto é Full Stack e estou utilizando o Laravel para construir a API deste site, o VueJs para o Front End e MySql pro banco de dados.',
+                    category: "Laravel 10, VueJs, Vuex, tailwind, Docker",
+                    description: 'Projeto pessoal que consiste em um site que pode adicionar tarefas, adicionar categorias e o dia para serem realizadas, terá área de perfil, de cronômetro, calendário para consultar as tarefas. Este projeto é Full Stack e estou utilizando o Laravel com Laravel Sail para construir a API deste site, o VueJs para o Front End e MySql pro banco de dados.',
                     href: "https://todolistapp01.netlify.app/"
                 },
             ],

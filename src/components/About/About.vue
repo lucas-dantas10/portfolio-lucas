@@ -47,7 +47,7 @@
                         </div>
                     </div>
 
-                    <a href="https://drive.google.com/file/d/1M-j9zywCeYQS7JSOIXti9qp3l_GWplYj/view?usp=sharing"
+                    <a href="https://drive.google.com/file/d/1vz6pMsbE7Z-LD1fpPB7JkaZHASfaO4Nm/view?usp=sharing"
                         download="Lucas-Dantas.pdf" target="_blank"
                         class="btn-rounded btn btn-outline-primary mt-4">Download CV</a>
                 </div>

@@ -4,9 +4,9 @@
             <p class="secundary-text">O que eu fiz ?</p>
             <h1 class="primary-text mb-5">Portfólio</h1>
 
-            <div class="portfolio-container d-flex align-items-center justify-content-between">
-                <div class="card d-flex" style="width: 18rem;" v-for="project in projects">
-                    <img :src="project.img" class="card-img-top" :alt="project.title" style="max-height: 12vh;">
+            <div class="portfolio-container d-flex align-items-center justify-content-between gap-4">
+                <div class="card d-flex" v-for="project in projects">
+                    <img :src="project.img" class="card-img-top" :alt="project.title">
                     <div class="card-body">
                         <h5 class="card-title">{{ project.title }}</h5>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" @click.prevent="dataProject(project)">
@@ -106,10 +106,23 @@ export default {
     margin-bottom: 10rem;
 }
 
+.portfolio-container .card {
+    width: 25%;
+}
+
+.portfolio-container .card img {
+    max-height: 28rem;
+    height: 10rem;
+}
+
 @media only screen and (max-width: 600px) {
     .portfolio-container {
         flex-direction: column;
         gap: 2rem;
+    }
+
+    .portfolio-container .card {
+        width: 100%;
     }
 }
 </style>

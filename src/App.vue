@@ -1,5 +1,7 @@
 <template>
+    <!-- <BtnGoTop></BtnGoTop> -->
     <div class="main">
+        
         <div class="container">
             <NavBar></NavBar>
         </div>
@@ -26,7 +28,6 @@
 
         <div class="container">
             <Footer></Footer>
-            <BtnGoTop></BtnGoTop>
         </div>
 
     </div>

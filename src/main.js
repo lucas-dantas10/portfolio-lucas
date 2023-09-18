@@ -1,7 +1,10 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { 
+    faGithub, faLinkedin, faInstagram, faVuejs, faLaravel, faDocker, faHtml5,
+    faCss3Alt, faJs, faPhp
+ } from '@fortawesome/free-brands-svg-icons'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import Loading from 'vue-loading-overlay';
@@ -15,7 +18,8 @@ import './css/style.css';
 // import "bootstrap/dist/css/bootstrap.css";
 
 library.add([
-    faGithub, faLinkedin, faInstagram, faArrowUp
+    faGithub, faLinkedin, faInstagram, faArrowUp, faVuejs, faLaravel, faDocker, faHtml5,
+    faCss3Alt, faJs, faPhp
 ]);
 
 AOS.init();

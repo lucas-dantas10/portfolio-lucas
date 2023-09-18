@@ -1,6 +1,6 @@
 <template>
     <nav id="navbar-example2" class="navbar px-3 mb-3">
-        <a class="navbar-brand" id="navbar-brand" href="#">Lucas</a>
+        <a class="navbar-brand" id="navbar-brand" href="#">LD</a>
         <ul class="nav nav-pills">
             <div class="content" ref="content">
                 <TransitionGroup name="list">

@@ -6,7 +6,7 @@
 
             <div class="portfolio-container d-flex align-items-center justify-content-between gap-4">
                 <div class="card d-flex" v-for="project in projects">
-                    <img :src="project.img" class="card-img-top" :alt="project.title">
+                    <img :src="project.img" class="card-img-top ratio ratio-16/9" :alt="project.title">
                     <div class="card-body">
                         <h5 class="card-title">{{ project.title }}</h5>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" @click.prevent="dataProject(project)">
@@ -30,7 +30,9 @@
                         <p><span class="primary-text">Estado Do Projeto:</span> {{ project.state }}</p>
                         <p><span class="primary-text">Categoria:</span> {{ project.category }}</p>
                         <p><span class="primary-text">Projeto:</span> {{ project.description }}</p>
-                        <p><span class="primary-text">Link:</span> <a :href="project.href" class="link-info" target="_blank">link do projeto</a></p>
+                        <a class="border icons rounded-circle p-4 d-flex align-items-center justify-content-center" style="width: 20px; height: 20px;" :href="project.href" target="_blank">
+                            <font-awesome-icon :icon="['fab', 'github']" class="fs-4" style="color: black;" />
+                        </a>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -46,6 +48,7 @@ import alura from '../../assets/imgs/alura.png';
 import hzc from '../../assets/imgs/hzc-alura.png';
 import notification from '../../assets/imgs/notification.png';
 import todolist from '../../assets/imgs/todolist.png';
+import uploadAi from '../../assets/imgs/upload-ai.png';
 import Modal from '../Modal/Modal.vue';
 export default {
     components: {
@@ -87,6 +90,14 @@ export default {
                     description: 'Projeto pessoal que consiste em um site que pode adicionar tarefas, adicionar categorias e o dia para serem realizadas, terá área de perfil, de cronômetro, calendário para consultar as tarefas. Este projeto é Full Stack e estou utilizando o Laravel com Laravel Sail para construir a API deste site, o VueJs para o Front End e MySql pro banco de dados.',
                     href: "https://todolistapp01.netlify.app/"
                 },
+                {
+                    img: uploadAi,
+                    title: "Upload.AI",
+                    state: 'Concluido',
+                    category: "Node, Prisma ORM, VueJs com Typescript, Tailwind",
+                    description: 'Aplicação que possibilita realizar upload de videos e por meio de IA, criar automaticamente títulos chamativos e descrições com um boa indexação. Aplicação realizada em conjunto da Rocketseat.',
+                    href: "https://github.com/lucas-dantas10/upload.ai"
+                },
             ],
             project: {}
         }
@@ -104,6 +115,15 @@ export default {
 #portfolio {
     height: 100%;
     margin-bottom: 10rem;
+}
+
+.icons {
+    transition: .5s ease-in-out;
+}
+
+.icons:hover {
+    cursor: pointer;
+    background-color: var(--violet);
 }
 
 .portfolio-container .card {

@@ -10,7 +10,7 @@
             <p class="fs-5 ln-lg">Este é meu Portfólio Oficial.</p>
             <p class="fs-5 ln-lg">Todos os detalhes dos trabalhos desenvolvidos<br> por mim estão aqui.</p>
 
-            <div class="habilities d-flex align-items-center gap-4 mt-4 mb-4">
+            <div class="habilities border-bottom border-secondary pb-2 d-flex align-items-center gap-4 mt-4 mb-4">
                 <font-awesome-icon :icon="['fab', 'laravel']" class="icons" style="color: red" />
                 <font-awesome-icon :icon="['fab', 'vuejs']" class="icons" style="color: #42b983" />
                 <font-awesome-icon :icon="['fab', 'php']" class="icons" style="color: #777BB3" />
@@ -31,9 +31,10 @@
     margin-bottom: 12rem;
 }
 
-/* .habilities {
-    border: 1px solid #d3d3d3;
-} */
+.habilities {
+    width: 45%;
+    border-color: var(--black);
+}
 
 .icons {
     font-size: 2rem;
